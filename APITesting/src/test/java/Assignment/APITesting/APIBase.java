@@ -8,7 +8,7 @@ public class APIBase
 {
 	RequestSpecification requestSpec;
 	
-	@BeforeTest
+	@BeforeClass
 	public void SetUp() throws Exception
 	{
 		requestSpec = RequestSpecBuilderUtility.BuildRequestSpec();
