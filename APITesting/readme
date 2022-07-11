@@ -1,0 +1,9 @@
+1. Created 3 testcases for API testing maven project ("$\git\API_Testing\APITesting\src\test\java\Assignment\APITestinga")
+	a) VerifyMovieExistenceTest ( GET request )
+	b) VerifyMovieRatingUpdate  ( POST request )
+	c) VerifyTopRatedMovieTest  ( GET request )
+	
+2. Added generic utilities for reading data from excel sheet and it is located in testdata page.
+3. Added common used functions in utilities package
+4. Added TestNG framework in to this project and TestNG.xml can be exeuted fror running the complete suite.
+5. Added the code To GitHub and a jenkins pipeline has been created.
