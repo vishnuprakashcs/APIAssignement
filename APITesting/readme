@@ -3,6 +3,24 @@
 	b) VerifyMovieRatingUpdate  ( POST request )
 	c) VerifyTopRatedMovieTest  ( GET request )
 	
+Feature: Testing a REST API
+  Users should be able to submit GET and POST requests to a web service
+  
+  Scenario: GET - Verify movies exist in the top rated movie list from a web service
+    When users want to get information on the top rated movies
+    Then the requested data is returned with sttaus code 200
+	And if the specified movies exists test will be success.
+	
+  Scenario: POST movie rating to a movie in top movie list from a web service
+	Given user with session id authenticated for a session
+    When a post request made with a new rating of a movie ID
+    Then the returned status code is 201 if this post successfull
+	
+  Scenario: GET - Verify a specified movie is the top rated movie in the list from a web service
+    When users want to get information on the top rated movies
+    Then the requested data is returned with sttaus code 200
+	And if the specified movie is having the top rating in the list, test will be success.
+	
 2. Added generic utilities for reading data from excel sheet and it is located in testdata page.
 3. Added common used functions in utilities package
 4. Added TestNG framework in to this project and TestNG.xml can be exeuted fror running the complete suite.
